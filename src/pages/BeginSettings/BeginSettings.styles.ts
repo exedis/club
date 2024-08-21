@@ -20,3 +20,11 @@ export const BeginSettingsImagesItem = styled.div`
   border: 1px solid gray;
   border-radius: 4px;
 `;
+
+export const BeginSettingsInput = styled.input`
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  font-size: 16px;
+  font-family: "Roboto";
+`;
