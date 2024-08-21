@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import React from "react";
 import WebApp from "@twa-dev/sdk";
 import "@fontsource/roboto";
+import { backgroundColor, textColor } from "./LayoutSettings";
 
 export const Layout = ({ children }) => {
   const viewportStableHeight = WebApp.viewportStableHeight;
@@ -19,7 +20,9 @@ export const LayoutWrapper = styled.div`
   padding: 0 6px;
   height: 100dvh;
   box-sizing: border-box;
-  font-family: "Roboto, sans-serif";
+  font-family: "Roboto";
+  background-color: ${backgroundColor};
+  color: ${textColor};
 `;
 
 export const Content = styled.div<{
