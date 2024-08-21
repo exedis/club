@@ -19,7 +19,7 @@ export const LayoutWrapper = styled.div`
   padding: 0 6px;
   height: 100dvh;
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: "Roboto, sans-serif";
 `;
 
 export const Content = styled.div<{
