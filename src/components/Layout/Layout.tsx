@@ -16,7 +16,7 @@ export const LayoutWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 6px;
+  padding: 0 6px;
   height: 100dvh;
   box-sizing: border-box;
   font-family: "Roboto";

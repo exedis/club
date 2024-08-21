@@ -10,6 +10,8 @@ import { stores, StoresContext } from "@store";
 import WebApp from "@twa-dev/sdk";
 import { ShowProfiles } from "@pages/ShowProfiles/ShowProfiles";
 import { BeginSettings } from "@pages/BeginSettings/BeginSettings";
+import { Chats } from "@pages/Chats/Chats";
+import { Account } from "@pages/Account/Account";
 
 const cacheEmotion = createCache({
   key: "club",
@@ -41,6 +43,24 @@ function App() {
                 element={
                   <Layout>
                     <BeginSettings />
+                  </Layout>
+                }
+              />
+              <Route
+                path={Path.TO_CHATS}
+                index
+                element={
+                  <Layout>
+                    <Chats />
+                  </Layout>
+                }
+              />
+              <Route
+                path={Path.TO_ACCOUNT}
+                index
+                element={
+                  <Layout>
+                    <Account />
                   </Layout>
                 }
               />

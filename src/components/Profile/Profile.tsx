@@ -45,7 +45,7 @@ export const Profile = () => {
       </ProfileImagesWrapper>
       <ProfileShortData>
         <ProfileName>Имя, возраст</ProfileName>
-        <div>Короткая инфа на одну строку</div>
+        <div>Инфа на одну строку</div>
       </ProfileShortData>
 
       <ProfileDescription>
