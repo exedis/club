@@ -1,14 +1,13 @@
 import styled from "@emotion/styled";
 import React from "react";
-import WebApp from "@twa-dev/sdk";
 import "@fontsource/roboto";
 import { backgroundColor, textColor } from "./LayoutSettings";
 
 export const Layout = ({ children }) => {
-  const viewportStableHeight = WebApp.viewportStableHeight;
+  // const viewportStableHeight = WebApp.viewportStableHeight;
   return (
     <LayoutWrapper>
-      <Content windowHeight={viewportStableHeight}>{children}</Content>
+      <Content>{children}</Content>
     </LayoutWrapper>
   );
 };
@@ -24,10 +23,7 @@ export const LayoutWrapper = styled.div`
   color: ${textColor};
 `;
 
-export const Content = styled.div<{
-  windowHeight: number;
-}>`
-  height: ${({ windowHeight }) => `${windowHeight}px`};
+export const Content = styled.div`
   overscroll-behavior: contain;
   overflow-y: scroll;
 `;
