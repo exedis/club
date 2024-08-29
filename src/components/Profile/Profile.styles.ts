@@ -1,13 +1,12 @@
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
 
 export const CreateEventForm = styled.form`
   display: flex;
   flex-direction: column;
 `;
 
-export const ProfileWrapper = styled.div`
-  height: 110%;
-`;
+export const ProfileWrapper = styled.div``;
 
 export const ProfileImage = styled.div<{ img: string }>`
   width: 100%;
@@ -19,28 +18,8 @@ export const ProfileImage = styled.div<{ img: string }>`
 `;
 
 export const ProfileImagesWrapper = styled.div`
-  border-radius: 10px;
   overflow: hidden;
   position: relative;
-`;
-
-export const ProfileName = styled.div``;
-
-export const ProfileShortData = styled.div`
-  backdrop-filter: blur(6px);
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgb(108 104 104 / 28%) 100%
-  );
-  color: #fff;
-  font-size: 18px;
-  margin-top: -60px;
-  position: relative;
-  z-index: 9;
-  padding: 10px;
-  border-radius: 0 0 10px 10px;
 `;
 
 export const SliderNextButton = styled.div`
@@ -59,15 +38,22 @@ export const SliderPrevButton = styled.div`
   width: 50%;
 `;
 
-// export const ShowProfileInfoButton = styled.div`
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   height: 15%;
-//   width: 100%;
-// `;
+export const ProfilesTopbar = styled.div`
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  padding: 10px;
+`;
 
-export const ProfileDescription = styled.div`
-  margin: 10px 10px 0;
+export const ToolBarLink = styled(Link)`
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e54738;
 `;
