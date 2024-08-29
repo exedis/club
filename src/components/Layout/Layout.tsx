@@ -23,7 +23,4 @@ export const LayoutWrapper = styled.div`
   color: ${textColor};
 `;
 
-export const Content = styled.div`
-  overscroll-behavior: contain;
-  overflow-y: scroll;
-`;
+export const Content = styled.div``;

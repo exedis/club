@@ -6,7 +6,9 @@ export const CreateEventForm = styled.form`
   flex-direction: column;
 `;
 
-export const ProfileWrapper = styled.div``;
+export const ProfileWrapper = styled.div`
+  position: relative;
+`;
 
 export const ProfileImage = styled.div<{ img: string }>`
   width: 100%;
